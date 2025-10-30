@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AI Career Pathfinder — Vasanth B</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1>AI Career Pathfinder</h1>
+          <p class="sub">Personalized skill roadmaps & certification suggestions</p>
+        </div>
+      </div>
+      <div class="cta">Demo • Built by <strong>Vasanth B</strong></div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="card choose">
+      <h2>Choose your interest</h2>
+      <div class="options" id="domainOptions">
+        <!-- buttons injected by JS -->
+      </div>
+
+      <div class="controls">
+        <button id="generateBtn" class="btn primary">Generate Roadmap</button>
+        <button id="clearBtn" class="btn ghost">Clear Saved</button>
+      </div>
+    </section>
+
+    <section class="card output hidden" id="output">
+      <div class="headerRow">
+        <div>
+          <h3 id="domainTitle">Domain</h3>
+          <p id="domainTagline" class="muted">Tagline</p>
+        </div>
+        <div class="actions">
+          <button id="downloadBtn" class="btn">Download Roadmap</button>
+          <button id="saveBtn" class="btn primary">Save Preference</button>
+        </div>
+      </div>
+
+      <div id="roadmap" class="roadmap">
+        <!-- roadmap steps injected here -->
+      </div>
+
+      <div class="cardsRow" id="cardsRow">
+        <!-- certs and roles injected here -->
+      </div>
+
+      <div class="aiPitch" id="aiPitch"></div>
+    </section>
+
+    <section class="card about">
+      <h3>About & next steps</h3>
+      <ul>
+        <li>This prototype generates a suggested learning path for popular IT domains.</li>
+        <li>Replace static suggestions with real API/DB later (IBM SkillsBuild, Coursera APIs).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    © <span id="year"></span> Vasanth B — Loyola Institute of Technology
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
